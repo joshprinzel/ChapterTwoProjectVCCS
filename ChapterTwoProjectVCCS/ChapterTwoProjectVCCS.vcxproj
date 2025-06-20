@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="distance_per_tank_gas.cpp" />
+    <ClCompile Include="energy_drink.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ocean_levels.cpp" />
   </ItemGroup>

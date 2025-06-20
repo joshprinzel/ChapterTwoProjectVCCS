@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <cassert>
 const float HIGHWAYMILEAGE = 28.9;
 const float TOWNMILEAGE = 23.5;
 
@@ -44,4 +45,26 @@ int gas_distance() {
 	return 0;
 
 
+}
+
+
+//Unit test for core logic 
+
+void run_gas_tests() {
+	//Each bracket makes its own scope or mini test case, hence why there are so many brackets
+	{
+		std::string s = "HIGHWAY";
+		assert(to_lower(s) == "highway");
+	}
+	{
+		std::string s = "ToWn";
+		assert(to_lower(s) == "town");
+	}
+	{
+		float gallons = 20.0f;
+		assert(compute_distance(gallons, "highway") == gallons * HIGHWAYMILEAGE);
+		assert(compute_distance(gallons, "town") == gallons * TOWNMILEAGE);
+		assert(compute_distance(gallons, "banana") == -1.0f);
+	}
+	std::cout << "ALL TEST PASSED! \n";
 }
