@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-void main() {
+void ocean_project() {
 	//The number of milimeters the ocean rises every year
 	const float OCEAN_RISING = 1.5;
 

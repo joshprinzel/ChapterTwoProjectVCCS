@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="distance_per_tank_gas.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="ocean_levels.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

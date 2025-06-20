@@ -18,5 +18,11 @@
     <ClCompile Include="ocean_levels.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="distance_per_tank_gas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
